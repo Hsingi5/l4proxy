@@ -1,5 +1,5 @@
-#ifndef BLUE5_PROXY_BLUE5_PROXY_H
-#define BLUE5_PROXY_BLUE5_PROXY_H
+#ifndef L4PROXY_L4PROXY_H
+#define L4PROXY_L4PROXY_H
 
 #define DEBUG_INFO 0
 #define DEBUG_TRACE 0
@@ -68,7 +68,6 @@ typedef struct tcp_stream {
 
 typedef struct thread_context
 {
-    mctx_t mctx;                 /* mtcp context */
 	int cpu;                    /* CPU core number */
     int listener;                /* listener socket */
     int ep;                      /* epoll socket */
@@ -123,4 +122,4 @@ struct config {
 struct proxy_context *g_proxy_ctx;
 /*---------------------------------------------------------------------------*/
 
-#endif //BLUE5_PROXY_BLUE5_PROXY_H
+#endif //L4PROXY_L4PROXY_H
